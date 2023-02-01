@@ -150,5 +150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1440527884358674b8fcbac972bde151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
+  decayTime: 2.5
   player: {fileID: 6335940713740599073, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
-  agent: {fileID: 6585727038245560943}

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,20 +6,40 @@ using UnityEngine.AI;
 
 public class Projectile : MonoBehaviour
 {
-    public Transform player;
-    public NavMeshAgent agent;
-    private Vector3 target;
-    
+    public float speed;
+    public float decayTime;
 
-    // Start is called before the first frame update
+    public Transform player;
+    private Vector3 target;
+
     void Start()
     {
-        //target = new Vector3(player.position.x, player.position.y, player.position.z);
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        target = new Vector3(player.position.x, player.position.y, player.position.z);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        agent.SetDestination(player.position);
+        transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+
+        if (transform.position.x == target.x && transform.position.y == target.y && transform.position.z == target.z)
+        {
+            DestroyProjectile();
+        }
+        
+        Destroy(gameObject, decayTime);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            DestroyProjectile();
+        }
+    }
+
+    private void DestroyProjectile()
+    {
+        Destroy(gameObject);
     }
 }
