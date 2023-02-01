@@ -8,8 +8,9 @@ public class PirateShip : MonoBehaviour
 {
     //View Distance of player range
     public float viewDistance = 10f;
+    //Checking what point it needs to go to next
     public float checkPointCounter;
-
+    //Checking if chasing the player
     private bool chasingPlayer;
 
     //For chasing the player
