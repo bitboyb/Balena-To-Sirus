@@ -14,7 +14,7 @@ public class PirateShip : MonoBehaviour
 
     //For chasing the player
     public Transform player;
-
+    //Check point locations
     public Transform checkPoint1;
     public Transform checkPoint2;
     public Transform checkPoint3;
@@ -33,6 +33,7 @@ public class PirateShip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Checking if player is being chased, if not it will run through the check point system
         if (chasingPlayer == false)
             CheckPointSystem();
 
@@ -46,6 +47,7 @@ public class PirateShip : MonoBehaviour
         else
         {
             chasingPlayer = false;
+            agent.stoppingDistance = 0;
         }
     }
 
@@ -54,25 +56,23 @@ public class PirateShip : MonoBehaviour
         if (checkPointCounter == 1)
         {
             agent.SetDestination(checkPoint1.position);
-
         }
 
         if (checkPointCounter == 2)
         {
             agent.SetDestination(checkPoint2.position);
-
         }
 
         if (checkPointCounter == 3)
         {
             agent.SetDestination(checkPoint3.position);
-
         }
     }
 
     void ChasePlayer()
     {
         agent.SetDestination(player.position);
+        agent.stoppingDistance = 5;
     }
 
     private void OnTriggerEnter(Collider other)

@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CheckPoint1
+  - CheckPoint2
+  - CheckPoint3
   layers:
   - Default
   - TransparentFX
