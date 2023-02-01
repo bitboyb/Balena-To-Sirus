@@ -8,9 +8,12 @@ public class Projectile : MonoBehaviour
 {
     public float speed;
     public float decayTime;
+    public float damage = 10f;
 
     public Transform player;
     private Vector3 target;
+
+    public Health playersHealth;
 
     void Start()
     {
@@ -35,6 +38,7 @@ public class Projectile : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             DestroyProjectile();
+            Health.health -= damage;
         }
     }
 
