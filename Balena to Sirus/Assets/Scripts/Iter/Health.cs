@@ -13,5 +13,9 @@ public class Health : MonoBehaviour
     void Update()
     {
         healthText.text = "Health:" + health.ToString();
+
+        if (health >= maxHealth)
+            health = maxHealth;
+
     }
 }
