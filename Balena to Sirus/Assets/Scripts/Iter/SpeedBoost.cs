@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class SpeedBoost : MonoBehaviour
 {
-    public float speedBoost;
-    public float speedBoostTimer;
-    private float _speedBoostCount;
-    private bool _isBoosting;
+
+
 
     public PlayerController pController;
     
     // Start is called before the first frame update
     void Start()
     {
-        _isBoosting = false;
+
     }
 
     // Update is called once per frame
@@ -36,7 +34,7 @@ public class SpeedBoost : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
-
+            PlayerController.IsBoosted = true;
         }
     }
 }

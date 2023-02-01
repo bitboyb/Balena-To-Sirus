@@ -8,22 +8,41 @@ public class PlayerController : MonoBehaviour
 {
     public float playerSpeed;
     public float speedBoost;
+    private float maxSpeed;
+    private float normaleSpeed;
     public float speedBoostTimer;
     private float speedBoostCount;
-    public static float currentSpeed;
-    public float jumpForce;
+
     private Rigidbody _rb;
-    private bool _isGrounded;
-    private bool _isBoosted;
+    public static bool IsBoosted;
     
     void Awake()
     {
         _rb = GetComponent<Rigidbody>();
     }
 
+    private void Start()
+    {
+        IsBoosted = false;
+        maxSpeed = speedBoost;
+        normaleSpeed = playerSpeed;
+        speedBoostCount = speedBoostTimer;
+    }
+
+
     private void Update()
     {
-        currentSpeed = playerSpeed;
+        if (IsBoosted == true)
+        {
+            playerSpeed = maxSpeed;
+            speedBoostCount--;
+        }
+
+        if (speedBoostCount == 0f)
+        {
+            IsBoosted = false;
+            playerSpeed = normaleSpeed;
+        }
     }
 
     void FixedUpdate()
