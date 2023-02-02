@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEditor.Build;
 using UnityEngine;
 
@@ -10,6 +11,9 @@ public class PlayerController : MonoBehaviour
     public float speedBoost;
     private float maxSpeed;
     private float normaleSpeed;
+    private float halfSpeed;
+    public double speedDecay = 0.95;
+    public float speedLimit;
     public float speedBoostTimer;
     private float speedBoostCount;
 
@@ -27,12 +31,14 @@ public class PlayerController : MonoBehaviour
         maxSpeed = speedBoost;
         normaleSpeed = playerSpeed;
         speedBoostCount = speedBoostTimer;
+        halfSpeed = playerSpeed / 2f;
+        //Debug.Log("Player Half Speed is " + halfSpeed.ToString());
     }
 
 
     private void Update()
     {
-        if (IsBoosted == true)
+        if (IsBoosted)
         {
             playerSpeed = maxSpeed;
             speedBoostCount--;
@@ -43,6 +49,21 @@ public class PlayerController : MonoBehaviour
             IsBoosted = false;
             playerSpeed = normaleSpeed;
         }
+
+        if (Hide.isHiding == true)
+        {
+            playerSpeed = halfSpeed;
+        }
+        else
+        {
+            playerSpeed = normaleSpeed;
+        }
+        
+        Debug.Log(_rb.velocity.magnitude);
+        if (_rb.velocity.magnitude > speedLimit)
+        {
+            _rb.velocity = Vector3.ClampMagnitude(_rb.velocity, speedLimit);
+        }
     }
 
     void FixedUpdate()
@@ -51,6 +72,11 @@ public class PlayerController : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
         
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+
+        if (moveHorizontal == 0f && moveVertical == 0f)
+        {
+            _rb.velocity = _rb.velocity * (float)speedDecay;
+        }
 
         _rb.AddForce(movement * playerSpeed);
     }

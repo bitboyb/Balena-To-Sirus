@@ -35,6 +35,7 @@ public class SpeedBoost : MonoBehaviour
         {
             Destroy(gameObject);
             PlayerController.IsBoosted = true;
+            SpeedBoostSpawner.boosterDestroyed = true;
         }
     }
 }

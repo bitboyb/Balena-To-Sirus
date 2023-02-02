@@ -24,7 +24,7 @@ public class PirateFire : MonoBehaviour
     {
         
         //Checks if shooting range.
-        if (Vector3.Distance(transform.position, aim.position) < fireRange)
+        if (Vector3.Distance(transform.position, aim.position) < fireRange && Hide.isHiding == false)
         {
             FireCannon();
         }

@@ -10,6 +10,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GasCloud.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Iter/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Iter/Hide.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Iter/SpeedBoostSpawner.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -71,6 +73,7 @@
       <workItem from="1675094779540" duration="2216000" />
       <workItem from="1675246833024" duration="16121000" />
       <workItem from="1675266085140" duration="3709000" />
+      <workItem from="1675284401018" duration="8473000" />
     </task>
     <servers />
   </component>

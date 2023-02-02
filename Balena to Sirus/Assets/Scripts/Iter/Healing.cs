@@ -12,6 +12,7 @@ public class Healing : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Health.health += healing;
+            HealthSpawner.healingDestroyed = true;
             Destroy(gameObject);
         }
     }

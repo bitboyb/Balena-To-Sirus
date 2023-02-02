@@ -39,8 +39,8 @@ public class PirateShip : MonoBehaviour
             CheckPointSystem();
 
 
-        //Checks if player is in distance, then chance player if still in range.
-        if (Vector3.Distance(transform.position, player.position) < viewDistance)
+        //Checks if player is in distance, then chase player if still in range.
+        if (Vector3.Distance(transform.position, player.position) < viewDistance && Hide.isHiding == false)
         {
             chasingPlayer = true;
             ChasePlayer();
