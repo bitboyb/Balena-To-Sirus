@@ -33,6 +33,7 @@ public class Echo : MonoBehaviour
         initialScale = echo.transform.localScale;
         delayCount = echoDelay;
         iterEcho.Stop();
+        echoP.Stop();
     }
 
     void Update()

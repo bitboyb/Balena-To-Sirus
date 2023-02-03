@@ -34,7 +34,7 @@ public class PirateFire : MonoBehaviour
     {
         if (shotTimer <= 0)
         {
-            Instantiate(projectile, transform.position, Quaternion.identity);
+            Instantiate(projectile, firePoint.position, Quaternion.identity);
             shotTimer = startShotTimer;
         }
         else
