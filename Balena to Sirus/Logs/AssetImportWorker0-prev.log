@@ -1,0 +1,352 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.12f1 (48b1aa000234) revision 4764074'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 16122 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/shoot/OneDrive/Documents/GitHub/Balena-To-Sirus/Balena to Sirus
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49730
+Successfully changed project path to: C:/Users/shoot/OneDrive/Documents/GitHub/Balena-To-Sirus/Balena to Sirus
+C:/Users/shoot/OneDrive/Documents/GitHub/Balena-To-Sirus/Balena to Sirus
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 74.15 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.12f1 (48b1aa000234)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/shoot/OneDrive/Documents/GitHub/Balena-To-Sirus/Balena to Sirus/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     6023 MB
+    Driver:   31.0.15.1720
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003380 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 62.92 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.580 seconds
+Domain Reload Profiling:
+	ReloadAssembly (580ms)
+		BeginReloadAssembly (65ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (419ms)
+			LoadAssemblies (62ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (125ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (229ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (63ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (120ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004509 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\shoot\OneDrive\Documents\GitHub\Balena-To-Sirus\Balena to Sirus\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\shoot\OneDrive\Documents\GitHub\Balena-To-Sirus\Balena to Sirus\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.916 seconds
+Domain Reload Profiling:
+	ReloadAssembly (917ms)
+		BeginReloadAssembly (94ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (721ms)
+			LoadAssemblies (61ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (233ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (336ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (227ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3376 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 81 unused Assets / (56.7 KB). Loaded Objects now: 3781.
+Memory consumption went from 117.4 MB to 117.3 MB.
+Total: 2.984100 ms (FindLiveObjects: 0.280900 ms CreateObjectMapping: 0.088300 ms MarkObjects: 2.494600 ms  DeleteObjects: 0.119100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2015665.178511 seconds.
+  path: Assets/ship/ship/ship_cannon_Normal.png
+  artifactKey: Guid(c8921e387c462e24aa3a54288a539889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_cannon_Normal.png using Guid(c8921e387c462e24aa3a54288a539889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e76bf1538dbd78bba7cd4682d552498b') in 0.085128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/ship
+  artifactKey: Guid(5a2d9aa79faafc34ba0b4b0228cdfdcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship using Guid(5a2d9aa79faafc34ba0b4b0228cdfdcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9ab9a8dcc6894b3c034c503a35e2199') in 0.006702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/ship/ship/ship_back sails_Normal.png
+  artifactKey: Guid(46898e75147caae4faa73d5affebcf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_back sails_Normal.png using Guid(46898e75147caae4faa73d5affebcf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a43f368f2923f4448f27ecb81fd0a838') in 0.019885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ship/ship/ship_^^_2_BaseMap.png
+  artifactKey: Guid(f7342a8488696714684a675692271fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_^^_2_BaseMap.png using Guid(f7342a8488696714684a675692271fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11a347c9d1668de88aa26f391c6cc022') in 0.019513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ship/ship/ship_sails_BaseMap.png
+  artifactKey: Guid(33bb5ccd997343e44aca78b024dd1038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_sails_BaseMap.png using Guid(33bb5ccd997343e44aca78b024dd1038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ffeab5b762872d335572369f25a431b') in 0.017419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ship/ship/ship_^^_2_Normal.png
+  artifactKey: Guid(c491a9ed7cca12b4d9d98724e18724de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_^^_2_Normal.png using Guid(c491a9ed7cca12b4d9d98724e18724de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f95517a7fe82a0d848f2845a2d82d410') in 0.016757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ship/ship/ship_^^_BaseMap.png
+  artifactKey: Guid(b315f9076195b8841a706fd637002f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_^^_BaseMap.png using Guid(b315f9076195b8841a706fd637002f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f0e97c422697ceec67a2b36f0e9c860') in 0.014917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ship/ship/ship_ropes_MaskMap.png
+  artifactKey: Guid(2a0e09fe6422bd84489dbb387295567d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_ropes_MaskMap.png using Guid(2a0e09fe6422bd84489dbb387295567d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4edc752dd966bc193fa9eab7c995afb') in 0.024102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/ship/ship/ship_^^_2_MaskMap.png
+  artifactKey: Guid(d0bbf750c7f407f46b02dcb0ecdcd664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_^^_2_MaskMap.png using Guid(d0bbf750c7f407f46b02dcb0ecdcd664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '774e83e895753011d717b958487d5e93') in 0.020679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ship/ship/ship_^^_MaskMap.png
+  artifactKey: Guid(037c82dcf174a5f4babaedff82d3ac64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_^^_MaskMap.png using Guid(037c82dcf174a5f4babaedff82d3ac64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b2c9112490ef152ad6e98859145f08a') in 0.018539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ship/ship/ship_middle sails_BaseMap.png
+  artifactKey: Guid(eb1d00b995b50124f8f117d182048251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_middle sails_BaseMap.png using Guid(eb1d00b995b50124f8f117d182048251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9821fce2b34c98e6c93aa56f8bfa59ca') in 0.015990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ship/ship/ship_other stick_BaseMap.png
+  artifactKey: Guid(2e6ad9655f1d56340a9bd66ac3bc0d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_other stick_BaseMap.png using Guid(2e6ad9655f1d56340a9bd66ac3bc0d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ecad4deb4da141f539ed8c28c711f87') in 0.014315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/ship/ship/ship_middle sails_MaskMap.png
+  artifactKey: Guid(9ce7824d552a3674eae06674cf702fc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_middle sails_MaskMap.png using Guid(9ce7824d552a3674eae06674cf702fc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '195b580db222a4c3a3290217b9b58c91') in 0.018573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ship/ship/ship_sails_MaskMap.png
+  artifactKey: Guid(32bfc20ded504694fa789e5078dd61a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_sails_MaskMap.png using Guid(32bfc20ded504694fa789e5078dd61a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74710985108b5e584a7dfadc1ad9de44') in 0.018326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ship/ship/ship_pirate (don't need to texture)_MaskMap.png
+  artifactKey: Guid(a1e6e3bcc0fd8e24f9c87ac8c6cf991a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_pirate (don't need to texture)_MaskMap.png using Guid(a1e6e3bcc0fd8e24f9c87ac8c6cf991a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a527c3fed0aacd05284b3d9f38d9058c') in 0.016560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ship/ship/ship_cannon_BaseMap.png
+  artifactKey: Guid(b6238312adf760644a414524f1545285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_cannon_BaseMap.png using Guid(b6238312adf760644a414524f1545285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '633d71890a135ee30cdb592a8bd57d63') in 0.016261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ship/ship/ship_guard rails_Normal.png
+  artifactKey: Guid(48786f37968b3954d8764c3078f8a8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_guard rails_Normal.png using Guid(48786f37968b3954d8764c3078f8a8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d1d13e92919f100f414cb2f4038a6b2') in 0.015441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ship/ship/ship_other stick_Normal.png
+  artifactKey: Guid(ea6249f9fe256e24294a52baec25b0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_other stick_Normal.png using Guid(ea6249f9fe256e24294a52baec25b0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36bd8183e2c87eada4e8216a47af25a2') in 0.015057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/ship/ship/ship_jet_BaseMap.png
+  artifactKey: Guid(5bd83e96c9336d84f9fe80dfd79e1c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_jet_BaseMap.png using Guid(5bd83e96c9336d84f9fe80dfd79e1c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065153d5bfdbc2570e79b1b500f28de8') in 0.016102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ship/ship/ship_back sails_BaseMap.png
+  artifactKey: Guid(dd77a0fc53d7a7c43b5d4d9f8678031d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_back sails_BaseMap.png using Guid(dd77a0fc53d7a7c43b5d4d9f8678031d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c567904333220759ecf9ff063a2152a3') in 0.018963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ship/ship/ship_guard rails_MaskMap.png
+  artifactKey: Guid(c2a65df92f049ad4a8e692839916df5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_guard rails_MaskMap.png using Guid(c2a65df92f049ad4a8e692839916df5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d54f9685244c65e0762352dfeb30352') in 0.020769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/ship/ship/ship_jet_MaskMap.png
+  artifactKey: Guid(99fda75c230491e47a09281d5df8a0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_jet_MaskMap.png using Guid(99fda75c230491e47a09281d5df8a0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f89329635bb1fb76c227dad803f2922') in 0.022575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ship/ship/ship_other stick_MaskMap.png
+  artifactKey: Guid(e60e058a85be8484aaa91a8b8bfa3019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_other stick_MaskMap.png using Guid(e60e058a85be8484aaa91a8b8bfa3019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '661f80231b7103713f7004eab33f711d') in 0.020815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/ship/ship/ship_pirate (don't need to texture)_Normal.png
+  artifactKey: Guid(2161da035c831a445986947a071ea1c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_pirate (don't need to texture)_Normal.png using Guid(2161da035c831a445986947a071ea1c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3060d4a7ee15390b83133b2da99139') in 0.018034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/ship/ship
+  artifactKey: Guid(d5d92d5b317dd73498e5e362e90d3cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship using Guid(d5d92d5b317dd73498e5e362e90d3cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6847df4cfb9807063123c92aa79e019e') in 0.002341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.531521 seconds.
+  path: Assets/ship/ship/ship_ship base_BaseMap.png
+  artifactKey: Guid(448efa8f7b717d042a9b1eec62a453c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_ship base_BaseMap.png using Guid(448efa8f7b717d042a9b1eec62a453c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74b350e9336a1fc1135e57546352189e') in 0.036031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ship/ship/ship_stairs_MaskMap.png
+  artifactKey: Guid(c4fe88ca7d0882a48b8e99a254e493a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_stairs_MaskMap.png using Guid(c4fe88ca7d0882a48b8e99a254e493a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '080932f60963e230dd7c4fe0a1e9b3bf') in 0.026287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/ship/ship/ship_sticks_MaskMap.png
+  artifactKey: Guid(f1bcc5e99bc796d4a9b6001981d991fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_sticks_MaskMap.png using Guid(f1bcc5e99bc796d4a9b6001981d991fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3e61919bdce1a0f4a744b1de782d8e') in 0.023276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ship/ship/ship_sticks_Normal.png
+  artifactKey: Guid(fa452430fa6c0194b8a622104298d9c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_sticks_Normal.png using Guid(fa452430fa6c0194b8a622104298d9c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03516ddff3227d81bf1f032c0e42e42') in 0.032010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.326630 seconds.
+  path: Assets/ship/ship/ship_whale ornament_Normal.png
+  artifactKey: Guid(48408ae380abb004fb5dbc857edf48c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_whale ornament_Normal.png using Guid(48408ae380abb004fb5dbc857edf48c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549dc18532413164b045531d961a7200') in 0.029324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/ship/ship/ship_wheel_Normal.png
+  artifactKey: Guid(6dbde278cd369354fa16647086995ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_wheel_Normal.png using Guid(6dbde278cd369354fa16647086995ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26cd0a847d3ea6020b946fa747af93b0') in 0.023248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 173.221960 seconds.
+  path: Assets/PreFabs/Boost Spawner.prefab
+  artifactKey: Guid(7508996e7c0c9ae4984f0481e75ed36e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PreFabs/Boost Spawner.prefab using Guid(7508996e7c0c9ae4984f0481e75ed36e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '857e70398bf9c83c1523b15a56603ea9') in 0.086746 seconds 

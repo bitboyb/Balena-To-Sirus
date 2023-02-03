@@ -1,0 +1,254 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.12f1 (48b1aa000234) revision 4764074'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 16122 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/shoot/OneDrive/Documents/GitHub/Balena-To-Sirus/Balena to Sirus
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+49730
+Successfully changed project path to: C:/Users/shoot/OneDrive/Documents/GitHub/Balena-To-Sirus/Balena to Sirus
+C:/Users/shoot/OneDrive/Documents/GitHub/Balena-To-Sirus/Balena to Sirus
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 73.24 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.12f1 (48b1aa000234)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/shoot/OneDrive/Documents/GitHub/Balena-To-Sirus/Balena to Sirus/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     6023 MB
+    Driver:   31.0.15.1720
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56696
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004769 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 61.92 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.591 seconds
+Domain Reload Profiling:
+	ReloadAssembly (591ms)
+		BeginReloadAssembly (60ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (426ms)
+			LoadAssemblies (58ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (99ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (249ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (62ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (138ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005163 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\shoot\OneDrive\Documents\GitHub\Balena-To-Sirus\Balena to Sirus\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\shoot\OneDrive\Documents\GitHub\Balena-To-Sirus\Balena to Sirus\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.938 seconds
+Domain Reload Profiling:
+	ReloadAssembly (939ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (734ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (247ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (331ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3376 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 81 unused Assets / (56.7 KB). Loaded Objects now: 3781.
+Memory consumption went from 117.4 MB to 117.3 MB.
+Total: 3.270400 ms (FindLiveObjects: 0.373400 ms CreateObjectMapping: 0.163600 ms MarkObjects: 2.646700 ms  DeleteObjects: 0.085300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2015665.178877 seconds.
+  path: Assets/ship/ship/ship_back sails_MaskMap.png
+  artifactKey: Guid(f8225c398fc805743947413e9dd51e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_back sails_MaskMap.png using Guid(f8225c398fc805743947413e9dd51e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c804b75dd6f9139d3f7cde3fe0440be0') in 0.084503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ship/ship/ship_ropes_BaseMap.png
+  artifactKey: Guid(55d04815808252042a5360d5849d377f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_ropes_BaseMap.png using Guid(55d04815808252042a5360d5849d377f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '078bdb4bb88f9a0d8ae6d00bb5046911') in 0.020893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/ship/ship/ship_jet_Normal.png
+  artifactKey: Guid(da7ff65ce39300241afc74359388f820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_jet_Normal.png using Guid(da7ff65ce39300241afc74359388f820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78bed2e05c37db48cc43fcddfb686b14') in 0.020258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ship/ship/ship.obj
+  artifactKey: Guid(e42161a45e74197428f97a2b7f194e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship.obj using Guid(e42161a45e74197428f97a2b7f194e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c96be25a718c62989a918974ab110def') in 0.349490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ship/ship/ship_guard rails_BaseMap.png
+  artifactKey: Guid(b251282634515da48bad1dab2db52f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_guard rails_BaseMap.png using Guid(b251282634515da48bad1dab2db52f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2cce66612ea3299b6db5c48f46647f1') in 0.016448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/ship/ship/ship_^^_Normal.png
+  artifactKey: Guid(9632327304cb25b4480a6ceb4cc07005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_^^_Normal.png using Guid(9632327304cb25b4480a6ceb4cc07005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ac312fdcefc38af7b7c9d8fca2e7c6') in 0.015681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ship/ship/ship_middle sails_Normal.png
+  artifactKey: Guid(a6d54dcd95472ff4e9155d75657ec51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_middle sails_Normal.png using Guid(a6d54dcd95472ff4e9155d75657ec51e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4844357b70474409722817553120e4') in 0.017927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ship/ship/ship_cannon_MaskMap.png
+  artifactKey: Guid(5191a2645793be641bf4a206c89191a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_cannon_MaskMap.png using Guid(5191a2645793be641bf4a206c89191a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5f06906043464db4dc65379dc9854f') in 0.027950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/ship/ship/ship_ropes_Normal.png
+  artifactKey: Guid(868824ade482ded4b966293b2f32ef04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_ropes_Normal.png using Guid(868824ade482ded4b966293b2f32ef04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec43b23a5691bd04554b0d2db4151b5a') in 0.018887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ship/ship/ship_pirate (don't need to texture)_BaseMap.png
+  artifactKey: Guid(b4d932d3d76c2d6479c23305a5af422c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_pirate (don't need to texture)_BaseMap.png using Guid(b4d932d3d76c2d6479c23305a5af422c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd7f14d47e7fd0b5a5c657fbf31d447') in 0.017849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.524722 seconds.
+  path: Assets/ship/ship/ship_ship base_MaskMap.png
+  artifactKey: Guid(76650643d80bc1145a3aa4c7a58973ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_ship base_MaskMap.png using Guid(76650643d80bc1145a3aa4c7a58973ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b3aebbeae2ae9d29521ca1df54bbb34') in 0.036381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ship/ship/ship_stairs_Normal.png
+  artifactKey: Guid(b2e2a487fb2040d469f391340e1193f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_stairs_Normal.png using Guid(b2e2a487fb2040d469f391340e1193f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84d02c3ae91ad04dafca13a48201177d') in 0.029909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ship/ship/ship_sticks_BaseMap.png
+  artifactKey: Guid(52fb9b44c88c9f648bd30c2d05a1222e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_sticks_BaseMap.png using Guid(52fb9b44c88c9f648bd30c2d05a1222e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ec409b552fdbc854165165efda2b3a') in 0.019641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ship/ship/ship_whale ornament_BaseMap.png
+  artifactKey: Guid(e9af831360f439f4091f5a0925681f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_whale ornament_BaseMap.png using Guid(e9af831360f439f4091f5a0925681f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b42ef9a6f9506fc388df9bcec3e3cf1') in 0.034305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.323539 seconds.
+  path: Assets/ship/ship/ship_wheel_BaseMap.png
+  artifactKey: Guid(c7dd49dcca5b58045ad4e697bbf7744f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ship/ship/ship_wheel_BaseMap.png using Guid(c7dd49dcca5b58045ad4e697bbf7744f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1735f82f1d0eccd5708ce304b93338b0') in 0.037567 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
