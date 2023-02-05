@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
             playerSpeed = normaleSpeed;
         }
         
-        Debug.Log(_rb.velocity.magnitude);
+        //Debug.Log(_rb.velocity.magnitude);
         if (_rb.velocity.magnitude > speedLimit)
         {
             _rb.velocity = Vector3.ClampMagnitude(_rb.velocity, speedLimit);
