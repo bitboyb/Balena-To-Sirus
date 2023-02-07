@@ -18,6 +18,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Iter/SpeedBoostSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Snake/SnakeBody.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Snake/SnakeHead.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Pause.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,7 +87,7 @@
       <workItem from="1675456352002" duration="4989000" />
       <workItem from="1675598429320" duration="13628000" />
       <workItem from="1675616306890" duration="13447000" />
-      <workItem from="1675766432763" duration="5803000" />
+      <workItem from="1675766432763" duration="17702000" />
     </task>
     <servers />
   </component>

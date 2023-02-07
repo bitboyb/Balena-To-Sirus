@@ -7,6 +7,7 @@ public class OptionsMenu : MonoBehaviour
 
     public GameObject OptionsuUI;
     public GameObject MainMenuUI;
+    public GameObject PauseUI;
     
     // Start is called before the first frame update
     void Start()
@@ -20,9 +21,17 @@ public class OptionsMenu : MonoBehaviour
         
     }
 
-    public void BackToMainMenu()
+    public void BackTo()
     {
-        MainMenuUI.SetActive(true);
-        OptionsuUI.SetActive(false);
+        if (MainMenu.mainMenu == true)
+        {
+            MainMenuUI.SetActive(true);
+            OptionsuUI.SetActive(false);
+        }
+        else
+        {
+            PauseUI.SetActive(true);
+            OptionsuUI.SetActive(false);
+        }
     }
 }

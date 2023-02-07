@@ -59,5 +59,7 @@ public class PoufControler : MonoBehaviour
         {
             agent.SetDestination(hint2.position);
         }
+        
+        
     }
 }

@@ -7,11 +7,13 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    private bool mainMenu;
+    public static bool mainMenu;
 
     public GameObject gameUI;
     public GameObject mainMenuUI;
     public GameObject optionsMenuUI;
+    public GameObject pauseUi;
+    public GameObject pauseManager;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,10 @@ public class MainMenu : MonoBehaviour
         optionsMenuUI.SetActive(false);
         gameUI.SetActive(false);
         optionsMenuUI.SetActive(false);
+        pauseUi.SetActive(false);
+        pauseManager.SetActive(false);
+        
+        
     }
 
     // Update is called once per frame
@@ -35,7 +41,7 @@ public class MainMenu : MonoBehaviour
         mainMenuUI.SetActive(false);
         gameUI.SetActive(true);
         mainMenu = false;
-        
+        pauseManager.SetActive(true);
     }
 
     public void OptionsMenu()
@@ -46,6 +52,6 @@ public class MainMenu : MonoBehaviour
 
     public void CloseGame()
     {
-       // Application.Quit;
+       Application.Quit();
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Build;
@@ -5,7 +6,8 @@ using UnityEngine;
 
 public class Echo : MonoBehaviour
 {
-    public float echoDistance;
+    public float echoDistance1;
+    public float echoDistance2;
     public float scaleMultiplier;
     public float echoDelay;
     private float delayCount;
@@ -14,13 +16,17 @@ public class Echo : MonoBehaviour
     private bool recallEcho;
     
     public GameObject echo;
+    public GameObject echo2;
     
     
     public ParticleSystem echoP;
+    public ParticleSystem echoCrystal1;
+    
     public ParticleSystem iterEcho;
     
     public Transform player;
     public Transform echo1;
+    public Transform echoC1;
     
     public Camera camera1;
 
@@ -32,8 +38,10 @@ public class Echo : MonoBehaviour
     {
         initialScale = echo.transform.localScale;
         delayCount = echoDelay;
+        //Makes sure the game does not echo when first load in
         iterEcho.Stop();
         echoP.Stop();
+        echoCrystal1.Stop();
     }
 
     void Update()
@@ -44,17 +52,24 @@ public class Echo : MonoBehaviour
         if (recallEcho == true)
             delayCount -= Time.deltaTime;
         
+        //This where the echo recall happens.
         if (delayCount <= 0)
         {
             recallEcho = false;
+            //Add partical system in here in here
             echoP.Play();
+            echoCrystal1.Play();
             delayCount = echoDelay;
         }
 
+        //Calculate echo size
+        echoDistance1 = Vector3.Distance(echo1.position, player.position);
+        echoDistance2 = Vector3.Distance(echoC1.position, player.position);
         
-        echoDistance = Vector3.Distance(echo1.position, player.position);
-        echo.transform.localScale = initialScale + Vector3.one * (echoDistance * scaleMultiplier);
-        
+        //Changes echo size
+        echo.transform.localScale = initialScale + Vector3.one * (echoDistance1 * scaleMultiplier);
+        echo2.transform.localScale = initialScale + Vector3.one * (echoDistance2 * scaleMultiplier);
+
         //echo.transform.position = Camera.main.WorldToScreenPoint(echo1.position);
 
         //Vector3 pos = camera1.WorldToScreenPoint(echo1.position);
