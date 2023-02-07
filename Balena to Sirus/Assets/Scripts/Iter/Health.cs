@@ -35,8 +35,8 @@ public class Health : MonoBehaviour
 
         if (health <= 0)
         {
-            health = maxHealth;
             _rb.transform.position = CheckPoint.GetActiveCheckPointPoisition();
+            health = maxHealth;
         }
 
     }

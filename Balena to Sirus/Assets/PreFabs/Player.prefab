@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   died: 0
   healthText: {fileID: 0}
+  _player: {fileID: 6335940713740599084}
 --- !u!114 &3514676415998881525
 MonoBehaviour:
   m_ObjectHideFlags: 0
