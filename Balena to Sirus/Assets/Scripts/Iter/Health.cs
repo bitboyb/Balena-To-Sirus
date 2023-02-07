@@ -11,7 +11,8 @@ public class Health : MonoBehaviour
 
     public bool died;
 
-    public Text healthText;
+    public Slider healthSlider;
+    //public Text healthText;
     
     private Rigidbody _rb;
 
@@ -28,8 +29,9 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthText.text = "Health:" + health.ToString();
-
+        //healthText.text = "Health:" + health.ToString();
+        UpdateHealthBar();
+        
         if (health > maxHealth)
             health = maxHealth;
 
@@ -39,6 +41,11 @@ public class Health : MonoBehaviour
             health = maxHealth;
         }
 
+        
     }
 
+    void UpdateHealthBar()
+    {
+        healthSlider.value = health;
+    }
 }

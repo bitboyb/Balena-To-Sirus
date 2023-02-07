@@ -8,6 +8,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float playerSpeed;
+    public float rotSpeed;
     public float speedBoost;
     private float maxSpeed;
     private float normaleSpeed;
@@ -16,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public float speedLimit;
     public float speedBoostTimer;
     private float speedBoostCount;
-    
+
     public GameObject shadowplayer;
 
     private Rigidbody _rb;
@@ -84,6 +85,13 @@ public class PlayerController : MonoBehaviour
         {
             _rb.velocity = _rb.velocity * (float)speedDecay;
            shadowrb.velocity = shadowrb.velocity * (float)speedDecay;
+        }
+
+        if (movement != Vector3.zero)
+        {
+            Quaternion toRotation = Quaternion.LookRotation(movement, Vector3.up);
+
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotSpeed * Time.deltaTime);
         }
 
         _rb.AddForce(movement * playerSpeed);

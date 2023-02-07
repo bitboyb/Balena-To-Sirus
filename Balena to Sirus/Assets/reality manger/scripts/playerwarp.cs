@@ -14,6 +14,8 @@ public class playerwarp : MonoBehaviour
     public GameObject shadowplayer;
     public GameObject player;
 
+    public Slider timeShiftSlider;
+
     //public Text altUniText;
 
     public void SwitchPlayer()
@@ -36,6 +38,7 @@ public class playerwarp : MonoBehaviour
     void Update()
     {
         //altUniText.text = "Time Left:" + universeSwitchTimer.ToString();
+        timeShiftSlider.value = universeSwitchTimer;
         
         if (Input.GetKeyDown("e") && universeSwitchTimer > 0)
         {
@@ -53,6 +56,8 @@ public class playerwarp : MonoBehaviour
                 universeSwitchTimer = 0;
             }
         }
+        
+        
     }
 
     private void OnTriggerStay(Collider other)
