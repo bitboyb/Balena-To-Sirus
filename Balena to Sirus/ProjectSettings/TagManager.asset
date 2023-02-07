@@ -8,6 +8,10 @@ TagManager:
   - CheckPoint2
   - CheckPoint3
   - Hide
+  - Hint
+  - GM
+  - PCheckPoint
+  - FishSwimArea
   layers:
   - Default
   - TransparentFX
@@ -15,7 +19,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Post-processing
   - 
   - 
   - 

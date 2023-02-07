@@ -12,6 +12,8 @@ public class PirateShip : MonoBehaviour
     public float checkPointCounter;
     //Checking if chasing the player
     private bool chasingPlayer;
+    public float waitBeforMoving = 2f;
+    public float delayCounter;
 
     //For chasing the player
     public Transform player;
@@ -29,6 +31,7 @@ public class PirateShip : MonoBehaviour
     {
         chasingPlayer = false;
         checkPointCounter = 1;
+        delayCounter = waitBeforMoving;
     }
 
     // Update is called once per frame
@@ -36,7 +39,15 @@ public class PirateShip : MonoBehaviour
     {
         //Checking if player is being chased, if not it will run through the check point system
         if (chasingPlayer == false)
+            delayCounter -= Time.deltaTime;
+
+
+        if (delayCounter < 0)
+        {
             CheckPointSystem();
+            delayCounter = waitBeforMoving;
+        }
+
 
 
         //Checks if player is in distance, then chase player if still in range.

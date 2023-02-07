@@ -16,13 +16,19 @@ public class PlayerController : MonoBehaviour
     public float speedLimit;
     public float speedBoostTimer;
     private float speedBoostCount;
+    
+    public GameObject shadowplayer;
 
     private Rigidbody _rb;
+    private Rigidbody shadowrb;
+    
+    
     public static bool IsBoosted;
     
     void Awake()
     {
         _rb = GetComponent<Rigidbody>();
+        shadowrb = shadowplayer.GetComponent<Rigidbody>();
     }
 
     private void Start()
@@ -59,10 +65,11 @@ public class PlayerController : MonoBehaviour
             playerSpeed = normaleSpeed;
         }
         
-        Debug.Log(_rb.velocity.magnitude);
+        //Debug.Log(_rb.velocity.magnitude);
         if (_rb.velocity.magnitude > speedLimit)
         {
             _rb.velocity = Vector3.ClampMagnitude(_rb.velocity, speedLimit);
+           shadowrb.velocity = Vector3.ClampMagnitude(_rb.velocity, speedLimit);
         }
     }
 
@@ -76,8 +83,10 @@ public class PlayerController : MonoBehaviour
         if (moveHorizontal == 0f && moveVertical == 0f)
         {
             _rb.velocity = _rb.velocity * (float)speedDecay;
+           shadowrb.velocity = shadowrb.velocity * (float)speedDecay;
         }
 
         _rb.AddForce(movement * playerSpeed);
+        shadowrb.AddForce(movement * playerSpeed);
     }
 }

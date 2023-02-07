@@ -23,10 +23,10 @@ public class Pouff : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (toHint = false)
+        if (toHint == false)
             agent.SetDestination(iter.position);
 
-        if (toHint = true)
+        if (toHint == true)
             MoveToHint();
     }
 
