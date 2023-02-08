@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class playerwarp : MonoBehaviour
 {
     public float universeSwitchTime = 10f;
     public float universeSwitchTimer;
+    public EventReference warpsound;
 
     public static bool altUniverse;
     
@@ -42,6 +44,7 @@ public class playerwarp : MonoBehaviour
         
         if (Input.GetKeyDown("e") && universeSwitchTimer > 0)
         {
+            RuntimeManager.PlayOneShot(warpsound);
             SwitchPlayer();
             //altUniverse = !altUniverse;
         }
