@@ -8,8 +8,13 @@ public class playerwarp : MonoBehaviour
 {
     public float universeSwitchTime = 10f;
     public float universeSwitchTimer;
+    public float rechargeRefreshTimer = 3f;
+    private float rechargeTimer;
+    public float rechargeRate;
+    
 
     public static bool altUniverse;
+    private bool energyCharge;
     
     public GameObject shadowplayer;
     public GameObject player;
@@ -32,6 +37,8 @@ public class playerwarp : MonoBehaviour
     {
         universeSwitchTimer = universeSwitchTime;
         altUniverse = false;
+        energyCharge = false;
+        rechargeTimer = rechargeRefreshTimer;
     }
 
     // Update is called once per frame
@@ -56,8 +63,32 @@ public class playerwarp : MonoBehaviour
                 universeSwitchTimer = 0;
             }
         }
-        
-        
+
+        TimeRecharge();
+
+    }
+
+    private void TimeRecharge()
+    {
+        if (universeSwitchTimer < universeSwitchTime)
+        {
+            energyCharge = true;
+        }
+        else
+        {
+            energyCharge = false;
+        }
+
+        if (energyCharge = true)
+        {
+            rechargeTimer -= Time.deltaTime;
+        }
+
+        if (rechargeTimer < 0)
+        {
+            universeSwitchTime += rechargeRate * Time.deltaTime;
+            energyCharge = false;
+        }    
     }
 
     private void OnTriggerStay(Collider other)
@@ -65,6 +96,7 @@ public class playerwarp : MonoBehaviour
         if (other.CompareTag("world2"))
         {
             altUniverse = true;
+            energyCharge = false;
         }
     }
 
@@ -72,7 +104,7 @@ public class playerwarp : MonoBehaviour
     {
         if (other.CompareTag("world2"))
         {
-            altUniverse = false;    
+            altUniverse = false;
         }
     }
 }
