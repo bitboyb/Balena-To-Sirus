@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMOD;
 using UnityEngine;
+using FMODUnity;
 
 public class PirateFire : MonoBehaviour
+
 {
     public float fireRange = 7f;
     private float shotTimer;
     public float startShotTimer;
+    
 
     public GameObject projectile;
-
     public Transform aim;
     public Transform firePoint;
     

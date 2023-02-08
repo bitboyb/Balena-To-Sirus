@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -14,6 +15,7 @@ public class PirateShip : MonoBehaviour
     private bool chasingPlayer;
     public float waitBeforMoving = 2f;
     public float delayCounter;
+    public EventReference soundmoving;
 
     //For chasing the player
     public Transform player;
