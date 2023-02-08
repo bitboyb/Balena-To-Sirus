@@ -195,6 +195,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   universeSwitchTime: 10
   universeSwitchTimer: 0
+  warpsound:
+    Guid:
+      Data1: 620256774
+      Data2: 1192485652
+      Data3: 1490315430
+      Data4: -1430737859
+    Path: event:/player/warp sound
   shadowplayer: {fileID: 0}
   player: {fileID: 6335940713740599084}
   timeShiftSlider: {fileID: 0}
@@ -210,6 +217,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89475a9f675f74842998b6f403e65978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pausesound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   PauseUI: {fileID: 0}
 --- !u!1 &6335940714016279790
 GameObject:

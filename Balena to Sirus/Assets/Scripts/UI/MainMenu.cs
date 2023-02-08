@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
 using FMODUnity;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -14,6 +15,8 @@ public class MainMenu : MonoBehaviour
     public GameObject optionsMenuUI;
     public GameObject pauseUi;
     public GameObject pauseManager;
+    private EventInstance snapshotinstance;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +28,7 @@ public class MainMenu : MonoBehaviour
         optionsMenuUI.SetActive(false);
         pauseUi.SetActive(false);
         pauseManager.SetActive(false);
-        
-        
+
     }
 
     // Update is called once per frame
@@ -43,6 +45,8 @@ public class MainMenu : MonoBehaviour
         mainMenu = false;
         pauseManager.SetActive(true);
         RuntimeManager.PlayOneShot(startsound);
+        snapshotinstance.setParameterByName("snapshotprammeter", 1);
+        
     }
 
     public void OptionsMenu()
