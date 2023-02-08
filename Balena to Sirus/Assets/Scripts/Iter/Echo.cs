@@ -3,9 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Build;
 using UnityEngine;
+using FMODUnity;
 
 public class Echo : MonoBehaviour
 {
+    //calls sound 
+    public EventReference echosound;
     public float echoDistance1;
     public float echoDistance2;
     public float scaleMultiplier;
@@ -47,8 +50,14 @@ public class Echo : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
+        {
             EchoOut();
+            //plays sound 
+            RuntimeManager.PlayOneShot(echosound);
+        }
+           
         
+
         if (recallEcho == true)
             delayCount -= Time.deltaTime;
         

@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     public static bool mainMenu;
-
+    public EventReference startsound;
     public GameObject gameUI;
     public GameObject mainMenuUI;
     public GameObject optionsMenuUI;
@@ -42,6 +42,7 @@ public class MainMenu : MonoBehaviour
         gameUI.SetActive(true);
         mainMenu = false;
         pauseManager.SetActive(true);
+        RuntimeManager.PlayOneShot(startsound);
     }
 
     public void OptionsMenu()

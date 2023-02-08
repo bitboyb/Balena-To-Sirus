@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ public class Pause : MonoBehaviour
 {
     public static bool gameIsPaused = false;
     private bool mainMenuOpen;
-    
+    public EventReference pausesound;
     public GameObject PauseUI;
     
     // Start is called before the first frame update
@@ -26,10 +27,12 @@ public class Pause : MonoBehaviour
             if (gameIsPaused == true)
             {
                     Resume();
+                    RuntimeManager.PlayOneShot(pausesound);
             }
             else
             {
                     PauseGame();
+                    RuntimeManager.PlayOneShot(pausesound);
             }
         }
 
