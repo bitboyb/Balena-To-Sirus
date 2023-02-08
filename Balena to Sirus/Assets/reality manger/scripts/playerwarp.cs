@@ -66,9 +66,13 @@ public class playerwarp : MonoBehaviour
         {
             altUniverse = true;
         }
-        else
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("world2"))
         {
-            altUniverse = false;
+            altUniverse = false;    
         }
     }
 }

@@ -41,7 +41,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.2.12f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity 2021.2.12f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\21499862\Documents\Galatic Space\Balena-To-Sirus\Balena to Sirus&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\21499862\Documents\Galatic Space\Balena-To-Sirus\Balena to Sirus" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -88,6 +88,7 @@
       <workItem from="1675598429320" duration="13628000" />
       <workItem from="1675616306890" duration="13447000" />
       <workItem from="1675766432763" duration="23717000" />
+      <workItem from="1675855987498" duration="829000" />
     </task>
     <servers />
   </component>
