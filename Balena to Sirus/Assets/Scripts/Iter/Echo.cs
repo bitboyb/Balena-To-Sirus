@@ -9,27 +9,31 @@ public class Echo : MonoBehaviour
 {
     //calls sound 
     public EventReference echosound;
+    
+    //Echo distance saved here
     public float echoDistance1;
     public float echoDistance2;
+    
+    //Calculations
     public float scaleMultiplier;
     public float echoDelay;
     private float delayCount;
   
-
+    //Calls to responed echos
     private bool recallEcho;
     
     public GameObject echo;
     public GameObject echo2;
     
     
-    public ParticleSystem echoP;
-    public ParticleSystem echoCrystal1;
+    public ParticleSystem echoP1;
+    public ParticleSystem echoP2;
     
     public ParticleSystem iterEcho;
     
     public Transform player;
-    public Transform echo1;
-    public Transform echoC1;
+    public Transform echoT1;
+    public Transform echoT2;
     
     public Camera camera1;
 
@@ -43,8 +47,8 @@ public class Echo : MonoBehaviour
         delayCount = echoDelay;
         //Makes sure the game does not echo when first load in
         iterEcho.Stop();
-        echoP.Stop();
-        echoCrystal1.Stop();
+        echoP1.Stop();
+        echoP2.Stop();
     }
 
     void Update()
@@ -66,14 +70,14 @@ public class Echo : MonoBehaviour
         {
             recallEcho = false;
             //Add partical system in here in here
-            echoP.Play();
-            echoCrystal1.Play();
+            echoP1.Play();
+            echoP2.Play();
             delayCount = echoDelay;
         }
 
         //Calculate echo size
-        echoDistance1 = Vector3.Distance(echo1.position, player.position);
-        echoDistance2 = Vector3.Distance(echoC1.position, player.position);
+        echoDistance1 = Vector3.Distance(echoT1.position, player.position);
+        echoDistance2 = Vector3.Distance(echoT2.position, player.position);
         
         //Changes echo size
         echo.transform.localScale = initialScale + Vector3.one * (echoDistance1 * scaleMultiplier);

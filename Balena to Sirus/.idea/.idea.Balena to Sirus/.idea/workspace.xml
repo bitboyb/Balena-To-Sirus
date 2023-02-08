@@ -8,6 +8,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/PreFabs/Planet Puzzle/Planet1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PreFabs/Planet Puzzle/Planet2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PreFabs/Planet Puzzle/Planet3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PreFabs/Planet Puzzle/PuzzleEnd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PreFabs/Planet Puzzle/RotPlanetRound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment/Fish/Fish.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment/Fish/FishGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enviroment/Fish/FishSpawner.cs" root0="FORCE_HIGHLIGHTING" />
@@ -89,6 +94,9 @@
       <workItem from="1675616306890" duration="13447000" />
       <workItem from="1675766432763" duration="23717000" />
       <workItem from="1675855987498" duration="829000" />
+      <workItem from="1675863675938" duration="3557000" />
+      <workItem from="1675871435612" duration="4042000" />
+      <workItem from="1675876361192" duration="3714000" />
     </task>
     <servers />
   </component>

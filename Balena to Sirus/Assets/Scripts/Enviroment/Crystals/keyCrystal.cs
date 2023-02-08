@@ -6,9 +6,6 @@ using UnityEngine.AI;
 
 public class keyCrystal : MonoBehaviour
 {
-    
-    
-    
     public Transform player;
 
     public NavMeshAgent agent;
@@ -30,6 +27,8 @@ public class keyCrystal : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            agent.SetDestination(player.position);
+            keyCrystalMem.collectedCrystals++;
             
         }
     }
