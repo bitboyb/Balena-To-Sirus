@@ -25,7 +25,6 @@ public class snapshotmaster : MonoBehaviour
     public void IsGame()
     {
         snapshotinstance.setParameterByNameWithLabel("snapshotprammeter","game");
-        snapshotinstance.stop(STOP_MODE.ALLOWFADEOUT);
     }
 
     void Update()

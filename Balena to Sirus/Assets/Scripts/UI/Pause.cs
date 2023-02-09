@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
 using FMODUnity;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,15 +11,13 @@ public class Pause : MonoBehaviour
     private bool mainMenuOpen;
     public EventReference pausesound;
     public GameObject PauseUI;
-    private snapshotmaster snapvalue;
-    
+   [SerializeField] private snapshotmaster snapvalue;
+
     // Start is called before the first frame update
     void Start()
     {
         snapvalue = GameObject.Find("snapshotmasterrr").GetComponent<snapshotmaster>();
         PauseUI.SetActive(false);
-        
-
     }
 
     // Update is called once per frame
@@ -35,10 +34,10 @@ public class Pause : MonoBehaviour
             }
             else
             {
-               
                 PauseGame();
                 RuntimeManager.PlayOneShot(pausesound);
             }
+            
         }
 
     }

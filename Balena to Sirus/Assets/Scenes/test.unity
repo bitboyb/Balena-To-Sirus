@@ -1884,11 +1884,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   snapshotevent:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1244422807
+      Data2: 1146794014
+      Data3: -256261229
+      Data4: -520496570
+    Path: event:/mastersnapshot
 --- !u!4 &609546451
 Transform:
   m_ObjectHideFlags: 0
@@ -3340,6 +3340,7 @@ GameObject:
   - component: {fileID: 1073054341}
   - component: {fileID: 1073054340}
   - component: {fileID: 1073054339}
+  - component: {fileID: 1073054342}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -3412,6 +3413,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1073054342}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: playsound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1415493586}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
@@ -3462,6 +3475,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073054337}
   m_CullTransparentMesh: 1
+--- !u!114 &1073054342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073054337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff89bb8304c62d47a2dc2c4e8f44ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicksound:
+    Guid:
+      Data1: -483495248
+      Data2: 1120980590
+      Data3: 821110199
+      Data4: -1708372685
+    Path: event:/buttonclick 2
+  hoversound:
+    Guid:
+      Data1: -765220200
+      Data2: 1159285891
+      Data3: 143200931
+      Data4: -2125404534
+    Path: event:/buttonhover
 --- !u!1 &1111241699
 GameObject:
   m_ObjectHideFlags: 0
@@ -5175,12 +5214,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1624126461}
-        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
-        m_MethodName: 
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: playsound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7973,9 +8012,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 731126636}
     - target: {fileID: 5014607187300695217, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: warpsound.Path
+      value: event:/player/warp sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014607187300695217, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
       propertyPath: timeShiftSlider
       value: 
       objectReference: {fileID: 9985019}
+    - target: {fileID: 5014607187300695217, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: warpsound.Guid.Data1
+      value: 620256774
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014607187300695217, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: warpsound.Guid.Data2
+      value: 1192485652
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014607187300695217, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: warpsound.Guid.Data3
+      value: 1490315430
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014607187300695217, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: warpsound.Guid.Data4
+      value: -1430737859
+      objectReference: {fileID: 0}
     - target: {fileID: 6335940713740599073, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
       propertyPath: m_RootOrder
       value: 8
