@@ -8,16 +8,20 @@ using UnityEngine;
 public class Pause : MonoBehaviour
 {
     public static bool gameIsPaused = false;
-    private bool mainMenuOpen;
+
+
     public EventReference pausesound;
     public GameObject PauseUI;
+    public GameObject optionsUi;
    [SerializeField] private snapshotmaster snapvalue;
 
     // Start is called before the first frame update
     void Start()
     {
-        snapvalue = GameObject.Find("snapshotmasterrr").GetComponent<snapshotmaster>();
+        
         PauseUI.SetActive(false);
+        optionsUi.SetActive(false);
+        snapvalue = GameObject.Find("snapshotmasterrr").GetComponent<snapshotmaster>();
     }
 
     // Update is called once per frame
@@ -26,7 +30,7 @@ public class Pause : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (gameIsPaused == true)
+            if (gameIsPaused == false)
             {
                   
                     Resume();
@@ -48,6 +52,7 @@ public class Pause : MonoBehaviour
         PauseUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
+        
     }
     
     private void PauseGame()
