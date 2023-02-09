@@ -560,8 +560,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../../gaming/sounds/soundnproject/soundnproject.fspro
-  sourceBankPath: ../../../../gaming/sounds/soundnproject/Build
+  sourceProjectPath: ../../../gaming/sounds/soundnproject/soundnproject.fspro
+  sourceBankPath: ../../../gaming/sounds/soundnproject/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -582,8 +582,12 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
-  Banks: []
+  MasterBanks:
+  - Master
+  Banks:
+  - ambience
+  - music
+  - sfx
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

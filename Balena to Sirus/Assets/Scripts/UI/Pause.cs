@@ -10,12 +10,15 @@ public class Pause : MonoBehaviour
     private bool mainMenuOpen;
     public EventReference pausesound;
     public GameObject PauseUI;
+    private snapshotmaster snapvalue;
     
     // Start is called before the first frame update
     void Start()
     {
+        snapvalue = GameObject.Find("snapshotmasterrr").GetComponent<snapshotmaster>();
         PauseUI.SetActive(false);
         
+
     }
 
     // Update is called once per frame
@@ -26,13 +29,15 @@ public class Pause : MonoBehaviour
         {
             if (gameIsPaused == true)
             {
+                  
                     Resume();
                     RuntimeManager.PlayOneShot(pausesound);
             }
             else
             {
-                    PauseGame();
-                    RuntimeManager.PlayOneShot(pausesound);
+               
+                PauseGame();
+                RuntimeManager.PlayOneShot(pausesound);
             }
         }
 
@@ -40,6 +45,7 @@ public class Pause : MonoBehaviour
 
     private void Resume()
     {
+        snapvalue.IsGame();
         PauseUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
@@ -47,6 +53,7 @@ public class Pause : MonoBehaviour
     
     private void PauseGame()
     {
+        snapvalue.IsMenu(); 
         PauseUI.SetActive(true);
         Time.timeScale = 0f;
         gameIsPaused = true;

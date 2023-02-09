@@ -619,6 +619,7 @@ GameObject:
   - component: {fileID: 256261396}
   - component: {fileID: 256261395}
   - component: {fileID: 256261394}
+  - component: {fileID: 256261397}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -691,6 +692,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 256261397}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: playsound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1415493590}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: StartGame
@@ -741,6 +754,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256261392}
   m_CullTransparentMesh: 1
+--- !u!114 &256261397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256261392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff89bb8304c62d47a2dc2c4e8f44ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicksound:
+    Guid:
+      Data1: 1680676796
+      Data2: 1273615336
+      Data3: 588458139
+      Data4: 978617154
+    Path: event:/new game buttonclick
+  hoversound:
+    Guid:
+      Data1: -765220200
+      Data2: 1159285891
+      Data3: 143200931
+      Data4: -2125404534
+    Path: event:/buttonhover
 --- !u!1001 &267411449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1501,6 +1540,7 @@ GameObject:
   - component: {fileID: 547258227}
   - component: {fileID: 547258226}
   - component: {fileID: 547258225}
+  - component: {fileID: 547258228}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -1573,6 +1613,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 547258228}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: playsound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1415493590}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: OptionsMenu
@@ -1623,6 +1675,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547258223}
   m_CullTransparentMesh: 1
+--- !u!114 &547258228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547258223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff89bb8304c62d47a2dc2c4e8f44ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicksound:
+    Guid:
+      Data1: -483495248
+      Data2: 1120980590
+      Data3: 821110199
+      Data4: -1708372685
+    Path: event:/buttonclick 2
+  hoversound:
+    Guid:
+      Data1: -765220200
+      Data2: 1159285891
+      Data3: 143200931
+      Data4: -2125404534
+    Path: event:/buttonhover
 --- !u!198 &555245881 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5650507628675597474, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
@@ -1775,6 +1853,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8039035987534545017, guid: 67f12c4af0e0867488c089d7357813dd, type: 3}
   m_PrefabInstance: {fileID: 8039035986269449402}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &609546449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 609546451}
+  - component: {fileID: 609546450}
+  m_Layer: 0
+  m_Name: snapshotmasterrr
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &609546450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609546449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ff11a6dbcf53e42a2f3927a3ffd88a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snapshotevent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+--- !u!4 &609546451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609546449}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 38.88893, y: 63.71056, z: -30.230116}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &614354998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,6 +2076,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &664524816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 664524818}
+  - component: {fileID: 664524817}
+  m_Layer: 0
+  m_Name: audio manger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &664524817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664524816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 577816745
+      Data2: 1102802888
+      Data3: 852963496
+      Data4: 521720038
+    Path: event:/Ambience/introAmbience
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &664524818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664524816}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 38.88893, y: 63.71056, z: -30.230116}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731126636
 GameObject:
@@ -4910,6 +5101,7 @@ GameObject:
   - component: {fileID: 1624126460}
   - component: {fileID: 1624126459}
   - component: {fileID: 1624126458}
+  - component: {fileID: 1624126461}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -4982,6 +5174,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1624126461}
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 6335940715098737763}
         m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: CloseGame
@@ -5032,6 +5236,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624126456}
   m_CullTransparentMesh: 1
+--- !u!114 &1624126461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624126456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff89bb8304c62d47a2dc2c4e8f44ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicksound:
+    Guid:
+      Data1: 192295404
+      Data2: 1115132775
+      Data3: 1990398380
+      Data4: -2104928833
+    Path: event:/buttonclick 3
+  hoversound:
+    Guid:
+      Data1: -765220200
+      Data2: 1159285891
+      Data3: 143200931
+      Data4: -2125404534
+    Path: event:/buttonhover
 --- !u!1 &1625951818
 GameObject:
   m_ObjectHideFlags: 0
@@ -5225,6 +5455,7 @@ GameObject:
   - component: {fileID: 1654621426}
   - component: {fileID: 1654621425}
   - component: {fileID: 1654621424}
+  - component: {fileID: 1654621427}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5347,6 +5578,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654621422}
   m_CullTransparentMesh: 1
+--- !u!114 &1654621427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654621422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff89bb8304c62d47a2dc2c4e8f44ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicksound:
+    Guid:
+      Data1: 192295404
+      Data2: 1115132775
+      Data3: 1990398380
+      Data4: -2104928833
+    Path: event:/buttonclick 3
+  hoversound:
+    Guid:
+      Data1: -765220200
+      Data2: 1159285891
+      Data3: 143200931
+      Data4: -2125404534
+    Path: event:/buttonhover
 --- !u!1 &1655705907
 GameObject:
   m_ObjectHideFlags: 0
@@ -6482,9 +6739,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1986061477}
   - component: {fileID: 1986061476}
-  - component: {fileID: 1986061475}
   - component: {fileID: 1986061474}
   - component: {fileID: 1986061478}
+  - component: {fileID: 1986061479}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: Untagged
@@ -6508,14 +6765,6 @@ MonoBehaviour:
   xOffSet: 0
   yOffSet: 15
   zOffSet: -9
---- !u!81 &1986061475
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986061473}
-  m_Enabled: 1
 --- !u!20 &1986061476
 Camera:
   m_ObjectHideFlags: 0
@@ -6588,11 +6837,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   echosound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1541335181
+      Data2: 1175022498
+      Data3: 1821286821
+      Data4: -933840502
+    Path: event:/whale/main whale
   echoDistance1: 0
   echoDistance2: 0
   scaleMultiplier: 0
@@ -6606,6 +6855,19 @@ MonoBehaviour:
   echoT1: {fileID: 0}
   echoT2: {fileID: 0}
   camera1: {fileID: 1986061476}
+--- !u!114 &1986061479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986061473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &2003425095
 GameObject:
   m_ObjectHideFlags: 0
@@ -6971,6 +7233,7 @@ GameObject:
   - component: {fileID: 2098033979}
   - component: {fileID: 2098033978}
   - component: {fileID: 2098033977}
+  - component: {fileID: 2098033980}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -7043,6 +7306,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2098033980}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: playsound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1415493586}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
@@ -7093,6 +7368,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098033975}
   m_CullTransparentMesh: 1
+--- !u!114 &2098033980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098033975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff89bb8304c62d47a2dc2c4e8f44ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clicksound:
+    Guid:
+      Data1: 192295404
+      Data2: 1115132775
+      Data3: 1990398380
+      Data4: -2104928833
+    Path: event:/buttonclick 3
+  hoversound:
+    Guid:
+      Data1: -765220200
+      Data2: 1159285891
+      Data3: 143200931
+      Data4: -2125404534
+    Path: event:/buttonhover
 --- !u!1 &2113740780
 GameObject:
   m_ObjectHideFlags: 0
@@ -7831,6 +8132,26 @@ PrefabInstance:
       propertyPath: PauseUI
       value: 
       objectReference: {fileID: 1740894229}
+    - target: {fileID: 8823759691838427406, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: pausesound.Path
+      value: event:/pause menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8823759691838427406, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: pausesound.Guid.Data1
+      value: 67865372
+      objectReference: {fileID: 0}
+    - target: {fileID: 8823759691838427406, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: pausesound.Guid.Data2
+      value: 1214370961
+      objectReference: {fileID: 0}
+    - target: {fileID: 8823759691838427406, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: pausesound.Guid.Data3
+      value: 910976651
+      objectReference: {fileID: 0}
+    - target: {fileID: 8823759691838427406, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: pausesound.Guid.Data4
+      value: 2135732199
+      objectReference: {fileID: 0}
     - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
       propertyPath: healthText
       value: 
