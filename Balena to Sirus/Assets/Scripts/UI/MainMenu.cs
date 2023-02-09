@@ -4,6 +4,7 @@ using FMODUnity;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
@@ -20,13 +21,12 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
-        snapvalue = GameObject.Find("snapshotmasterrr").GetComponent<snapshotmaster>();
         optionsMenuUI.SetActive(false);
         gameUI.SetActive(false);
         optionsMenuUI.SetActive(false);
         pauseUi.SetActive(false);
         pauseManager.SetActive(false);
-        
+        snapvalue = GameObject.Find("snapshotmasterrr").GetComponent<snapshotmaster>();
         
 
     }
@@ -39,20 +39,22 @@ public class MainMenu : MonoBehaviour
     
     public void StartGame()
     {
-        snapvalue.IsGame();
+        SceneManager.LoadScene("Tutorial");
         Time.timeScale = 1;
         mainMenuUI.SetActive(false);
         gameUI.SetActive(true);
         mainMenu = false;
         pauseManager.SetActive(true);
+        snapvalue.IsGame();
      
     }
 
     public void OptionsMenu()
     {
-        snapvalue.IsMenu();
+        
         mainMenuUI.SetActive(false);
         optionsMenuUI.SetActive(true);
+        snapvalue.IsMenu();
         
     }
 
