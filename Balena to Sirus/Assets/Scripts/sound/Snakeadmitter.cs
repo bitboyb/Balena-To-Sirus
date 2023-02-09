@@ -13,7 +13,7 @@ public class Snakeadmitter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        event
+      
     }
 
     // Update is called once per frame
