@@ -6,18 +6,20 @@ public class keyCrystalMem : MonoBehaviour
 {
     public static int collectedCrystals;
 
-    public int HowManyCrystalsOnLevel;
-    
+    public static bool isCollectingCrystal;
     
     // Start is called before the first frame update
     void Start()
     {
-        collectedCrystals = 0;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (isCollectingCrystal == true)
+        {
+            
+        }
     }
 }

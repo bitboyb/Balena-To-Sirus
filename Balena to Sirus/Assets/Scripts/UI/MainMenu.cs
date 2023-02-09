@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     public static bool mainMenu;
+    private snapshotmaster snapvalue;
     public EventReference startsound;
     public GameObject gameUI;
     public GameObject mainMenuUI;
@@ -19,7 +20,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
-        
+        snapvalue = GameObject.Find("snapshotmasterrr").GetComponent<snapshotmaster>();
         optionsMenuUI.SetActive(false);
         gameUI.SetActive(false);
         optionsMenuUI.SetActive(false);
@@ -27,6 +28,7 @@ public class MainMenu : MonoBehaviour
         pauseManager.SetActive(false);
         
         
+
     }
 
     // Update is called once per frame
@@ -37,18 +39,21 @@ public class MainMenu : MonoBehaviour
     
     public void StartGame()
     {
+        snapvalue.IsGame();
         Time.timeScale = 1;
         mainMenuUI.SetActive(false);
         gameUI.SetActive(true);
         mainMenu = false;
         pauseManager.SetActive(true);
-        RuntimeManager.PlayOneShot(startsound);
+     
     }
 
     public void OptionsMenu()
     {
+        snapvalue.IsMenu();
         mainMenuUI.SetActive(false);
         optionsMenuUI.SetActive(true);
+        
     }
 
     public void CloseGame()
