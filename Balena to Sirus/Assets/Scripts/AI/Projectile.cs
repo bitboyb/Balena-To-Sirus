@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using FMODUnity;
 
 public class Projectile : MonoBehaviour
 {
     public float speed;
     public float decayTime;
     public float damage = 10f;
+    public EventReference hit;
 
     public Transform player;
     private Vector3 target;
@@ -37,8 +39,10 @@ public class Projectile : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            RuntimeManager.PlayOneShot(hit);
             DestroyProjectile();
             Health.health -= damage;
+            
         }
     }
 

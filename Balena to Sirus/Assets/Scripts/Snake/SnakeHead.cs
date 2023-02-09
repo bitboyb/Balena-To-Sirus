@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using FMODUnity;
 
 public class SnakeHead : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class SnakeHead : MonoBehaviour
     public float viewDistance = 10f;
     //Checking if chasing the player
     private bool chasingPlayer;
+    
     
     //For chasing the player
     public Transform player;

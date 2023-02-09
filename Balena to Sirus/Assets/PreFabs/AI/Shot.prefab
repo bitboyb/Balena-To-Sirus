@@ -154,6 +154,13 @@ MonoBehaviour:
   speed: 5
   decayTime: 2.5
   damage: 10
+  hit:
+    Guid:
+      Data1: 1455762955
+      Data2: 1135362138
+      Data3: 306647209
+      Data4: 1108529072
+    Path: event:/player/damage sound
   player: {fileID: 6335940713740599073, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
   playersHealth: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
 --- !u!114 &4835375575016378182

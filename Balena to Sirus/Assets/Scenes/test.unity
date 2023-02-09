@@ -2087,8 +2087,10 @@ GameObject:
   m_Component:
   - component: {fileID: 664524818}
   - component: {fileID: 664524817}
+  - component: {fileID: 664524819}
+  - component: {fileID: 664524820}
   m_Layer: 0
-  m_Name: audio manger
+  m_Name: audiomanger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2139,6 +2141,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &664524819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664524816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f8491ab6c8e0dc46834db8be0227d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snake:
+    Guid:
+      Data1: -793078231
+      Data2: 1292486152
+      Data3: 1142702740
+      Data4: -1518401047
+    Path: event:/enemy/snake
+--- !u!114 &664524820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664524816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3269298b39e84dc45aac05185379f476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whalehit:
+    Guid:
+      Data1: 1455762955
+      Data2: 1135362138
+      Data3: 306647209
+      Data4: 1108529072
+    Path: event:/player/damage sound
 --- !u!1 &731126636
 GameObject:
   m_ObjectHideFlags: 0
@@ -8212,6 +8252,18 @@ PrefabInstance:
       value: 2135732199
       objectReference: {fileID: 0}
     - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: died
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: damge.Path
+      value: event:/player/damage sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: death.Path
+      value: event:/player/death sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
       propertyPath: healthText
       value: 
       objectReference: {fileID: 0}
@@ -8219,6 +8271,38 @@ PrefabInstance:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1415926665}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: damge.Guid.Data1
+      value: 1455762955
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: damge.Guid.Data2
+      value: 1135362138
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: damge.Guid.Data3
+      value: 306647209
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: damge.Guid.Data4
+      value: 1108529072
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: death.Guid.Data1
+      value: 690089584
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: death.Guid.Data2
+      value: 1312139246
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: death.Guid.Data3
+      value: -1798554195
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: death.Guid.Data4
+      value: 8759547
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
 --- !u!4 &6335940715098737740 stripped
@@ -8391,6 +8475,26 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 6335940715098737740}
+    - target: {fileID: 6888391734555525691, guid: 79cb3e06b5b211a4eaa57a86718cd0b7, type: 3}
+      propertyPath: soundmoving.Path
+      value: event:/enemy/ship moving
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888391734555525691, guid: 79cb3e06b5b211a4eaa57a86718cd0b7, type: 3}
+      propertyPath: soundmoving.Guid.Data1
+      value: 694591395
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888391734555525691, guid: 79cb3e06b5b211a4eaa57a86718cd0b7, type: 3}
+      propertyPath: soundmoving.Guid.Data2
+      value: 1139972642
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888391734555525691, guid: 79cb3e06b5b211a4eaa57a86718cd0b7, type: 3}
+      propertyPath: soundmoving.Guid.Data3
+      value: 95687588
+      objectReference: {fileID: 0}
+    - target: {fileID: 6888391734555525691, guid: 79cb3e06b5b211a4eaa57a86718cd0b7, type: 3}
+      propertyPath: soundmoving.Guid.Data4
+      value: 74941821
+      objectReference: {fileID: 0}
     - target: {fileID: 6888391734624528409, guid: 79cb3e06b5b211a4eaa57a86718cd0b7, type: 3}
       propertyPath: m_LocalPosition.z
       value: 22.85
