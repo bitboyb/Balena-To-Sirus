@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17323539, g: 0.16459554, b: 0.2966911, a: 1}
+  m_IndirectSpecularColor: {r: 0.17316318, g: 0.16457182, b: 0.29665613, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1444,11 +1444,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   echosound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1541335181
+      Data2: 1175022498
+      Data3: 1821286821
+      Data4: -933840502
+    Path: event:/whale/main whale
   echoDistance1: 0
   echoDistance2: 0
   scaleMultiplier: 10
@@ -3404,9 +3404,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 408824628}
     - target: {fileID: 5014607187300695217, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: warpsound.Path
+      value: event:/player/warp sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014607187300695217, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
       propertyPath: timeShiftSlider
       value: 
       objectReference: {fileID: 1977810668}
+    - target: {fileID: 5014607187300695217, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: warpsound.Guid.Data1
+      value: 620256774
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014607187300695217, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: warpsound.Guid.Data2
+      value: 1192485652
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014607187300695217, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: warpsound.Guid.Data3
+      value: 1490315430
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014607187300695217, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: warpsound.Guid.Data4
+      value: -1430737859
+      objectReference: {fileID: 0}
     - target: {fileID: 6335940713740599073, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3504,9 +3524,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1308160322}
     - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: death.Path
+      value: event:/player/death sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1977810668}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: death.Guid.Data1
+      value: 690089584
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: death.Guid.Data2
+      value: 1312139246
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: death.Guid.Data3
+      value: -1798554195
+      objectReference: {fileID: 0}
+    - target: {fileID: 9117943674480776098, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+      propertyPath: death.Guid.Data4
+      value: 8759547
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
 --- !u!4 &1194768306 stripped
@@ -3612,6 +3652,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7642dbd7aea5884a89c4e07ddfc228d, type: 3}
+--- !u!1 &1199559864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4531481534013101710, guid: c7642dbd7aea5884a89c4e07ddfc228d, type: 3}
+  m_PrefabInstance: {fileID: 1199559863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1199559865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199559864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f8491ab6c8e0dc46834db8be0227d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snake:
+    Guid:
+      Data1: -793078231
+      Data2: 1292486152
+      Data3: 1142702740
+      Data4: -1518401047
+    Path: event:/enemy/snake
 --- !u!4 &1213749281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9b16e60b7fdd2aa4d9e7577bca7bdec2, type: 3}
@@ -6587,6 +6651,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 065aebcbae1c39245a83a674c9b0b8a9, type: 3}
   m_PrefabInstance: {fileID: 710279246}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2099663060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2099663062}
+  - component: {fileID: 2099663061}
+  m_Layer: 0
+  m_Name: ambeint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2099663061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099663060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 577816745
+      Data2: 1102802888
+      Data3: 852963496
+      Data4: 521720038
+    Path: event:/Ambience/introAmbience
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &2099663062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099663060}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 44534.48, y: 14298.985, z: 22260.654}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2102169219 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b44b6e70b160a514cb3d593640ce3c9c, type: 3}
