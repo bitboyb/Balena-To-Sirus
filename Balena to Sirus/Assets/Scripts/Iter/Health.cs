@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using FMODUnity;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +8,6 @@ public class Health : MonoBehaviour
 {
     public static float health = 100;
     private float maxHealth = 100;
-    public EventReference death;
 
     public bool died;
 
@@ -40,7 +38,6 @@ public class Health : MonoBehaviour
         if (health <= 0)
         {
             _rb.transform.position = CheckPoint.GetActiveCheckPointPoisition();
-            RuntimeManager.PlayOneShot(death);
             health = maxHealth;
         }
 
