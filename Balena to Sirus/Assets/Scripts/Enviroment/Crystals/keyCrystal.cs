@@ -6,30 +6,32 @@ using UnityEngine.AI;
 
 public class keyCrystal : MonoBehaviour
 {
-    public Transform player;
-
-    public NavMeshAgent agent;
+    private bool followIter = false;
+    
+    public Transform iter;
     
 
-    // Start is called before the first frame update
-    void Start()
+    public NavMeshAgent agent;
+
+    private void Update()
     {
-        
+        if (followIter == true)
+        {
+            FollowIter();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            agent.SetDestination(player.position);
-            keyCrystalMem.collectedCrystals++;
-            
+            followIter = true;
+            Portal.collectedCrystals++;
         }
+    }
+
+    private void FollowIter()
+    {
+        agent.SetDestination(iter.position);
     }
 }

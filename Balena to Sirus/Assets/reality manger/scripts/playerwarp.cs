@@ -40,7 +40,7 @@ public class playerwarp : MonoBehaviour
     void Update()
     {
         //altUniText.text = "Time Left:" + universeSwitchTimer.ToString();
-        timeShiftSlider.value = universeSwitchTimer;
+        //timeShiftSlider.value = universeSwitchTimer;
         
         if (Input.GetKeyDown("e") && universeSwitchTimer > 0)
         {
