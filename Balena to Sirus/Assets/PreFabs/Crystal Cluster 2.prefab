@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 857988548361684016}
   - component: {fileID: 7710684743967898880}
   - component: {fileID: 1026738075195522603}
+  - component: {fileID: 1094325510240203485}
   m_Layer: 0
   m_Name: Crystal Cluster 2
   m_TagString: Untagged
@@ -82,8 +83,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f7f5e242a4bb0f488d7d72911af3f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6335940713740599073, guid: d7c5bc6e29d43a443be429dd078feae6, type: 3}
+  iter: {fileID: 0}
   agent: {fileID: 7710684743967898880}
+--- !u!114 &1094325510240203485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6992801183806261030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1251053056
+      Data2: 1214167534
+      Data3: 1316735378
+      Data4: 268254679
+    Path: event:/player/key crystal sound
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &3669636167529977489
 PrefabInstance:
   m_ObjectHideFlags: 0

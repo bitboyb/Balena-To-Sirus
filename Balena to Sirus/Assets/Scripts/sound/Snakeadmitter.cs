@@ -18,7 +18,7 @@ public class Snakeadmitter : MonoBehaviour
         SnakeInstance.start();
     }
 
-    public void IsPatroling()
+    public void IsPatrolin()
     {
         SnakeInstance.setParameterByName("Parameter 1", 0);
     }

@@ -20,11 +20,13 @@ public class SnakeHead : MonoBehaviour
     public Transform swimPoint;
     
     public NavMeshAgent agent;
+    private Snakeadmitter state;
     
     // Start is called before the first frame update
     void Start()
     {
         chasingPlayer = false;
+        state = GameObject.Find("enemy manger").GetComponent<Snakeadmitter>();
     }
 
     // Update is called once per frame
@@ -48,11 +50,13 @@ public class SnakeHead : MonoBehaviour
 
     private void Roam()
     {
+        state.IsPatrolin();
         agent.SetDestination(swimPoint.position);
     }
 
     void ChasePlayer()
     {
+        state.IsChasing();
         agent.SetDestination(player.position);
     }
 

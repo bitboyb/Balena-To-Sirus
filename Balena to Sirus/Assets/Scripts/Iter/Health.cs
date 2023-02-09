@@ -24,7 +24,6 @@ public class Health : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
-    
     }
 
     public void Start()

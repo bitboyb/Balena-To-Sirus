@@ -8,7 +8,6 @@ public class SnakeBody : MonoBehaviour
 {
     public float segDistance;
     private float normaleSpeed;
-    
     public Transform nextBody;
 
     public NavMeshAgent agent;
@@ -17,6 +16,7 @@ public class SnakeBody : MonoBehaviour
     void Start()
     {
         normaleSpeed = agent.speed;
+        
     }
 
     // Update is called once per frame
